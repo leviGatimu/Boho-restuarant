@@ -78,12 +78,12 @@
 
     <header class="relative w-full h-[85vh] flex items-center justify-center overflow-hidden bg-boho-900">
 
-        <div class="absolute inset-0 overflow-hidden pointer-events-none z-0">
-            <iframe
-                class="absolute top-1/2 left-1/2 min-w-full min-h-full w-[177.77vh] h-[56.25vw] -translate-x-1/2 -translate-y-1/2 opacity-70"
-                src="assets/boho.mp4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
-            </iframe>
-        </div>
+        <video autoplay muted loop playsinline
+            class="absolute top-0 left-0 w-full h-full object-cover opacity-70 z-0 pointer-events-none">
+            <source src="assets/boho.mp4" type="video/mp4">
+            <img src="https://via.placeholder.com/1920x1080?text=Boho+Vibes" class="w-full h-full object-cover"
+                alt="Background">
+        </video>
 
         <div
             class="absolute inset-0 bg-gradient-to-b from-boho-900/30 via-boho-900/40 to-boho-50 z-10 mix-blend-multiply">
